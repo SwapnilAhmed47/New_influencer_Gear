@@ -1,0 +1,247 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* header */
+.header{
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+/* navbar styles */
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.nav-links{
+    display: flex;
+    
+}
+
+.nav-links li{
+    list-style: none;
+    margin-right: 20px;
+}
+
+.nav-links li a{
+    text-decoration: none;
+    color: black;
+}
+
+/* banner section */
+.banner{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+   
+}
+
+/* .banner-content{
+    
+    
+} */
+
+.banner-img{
+    background-image: url("../images/Circle design.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 25px;
+    
+}
+
+/* main - section */
+
+main{
+    max-width: 1110px;
+    margin: 0 auto;
+}
+
+section{
+    margin-top: 70px;
+}
+
+.brand{
+    /* display: grid;
+    grid-template-columns: repeat(7, 1fr); */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 1px 2px 8px 1px gray;
+    padding: 36px 62px;
+}
+
+/* collections */
+
+.collection-title{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.rating-container{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.card-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    justify-items: center;
+    align-items: center;
+}
+
+.card{
+    box-shadow: 8px 8px 16px 1px gray;
+    padding: 20px;
+    border-radius: 8px;
+}
+.see-more{
+    text-align: end;
+    margin-top: 30px;
+    padding-right: 5px;
+    
+
+}
+.see-more a {
+    color: black;
+}
+
+.join-container{
+    max-width: 610px;
+}
+
+.join{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+footer{
+    margin-top: 90px;
+    background-color: #0A0826;
+}
+
+.footer-container{
+    color: white;
+    text-align: center;
+    padding: 35px 0;
+
+}
+
+.icon-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.icon-container i{
+    border: 10px solid rgb(63, 59, 81);
+    border-radius: 50%;
+}
+
+/* media-query */
+
+@media screen and (max-width:576px){
+    .navbar, .nav-links, .banner
+    {
+        text-align: center;
+        flex-direction: column;
+        
+    }
+
+    .navbar{
+        gap: 20px;
+    }
+
+    .card-container{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 30px;
+        
+        
+    }
+
+    /* nav - links */
+    .nav-links{
+        gap: 10px;
+    }
+
+    /* banner-content */
+    .banner{
+        gap: 30px;
+        flex-direction: column-reverse;
+    }
+    .banner-img{
+        background-size: contain;
+    }
+    .banner-img img{
+        width: 100%;
+    }
+
+    /* brand-section */
+    .brand{
+        /* display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 30px; */
+        /* display: flex; */
+        /* justify-items: center;
+        align-items: center; */
+
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        padding: 10px;
+        justify-content: center;
+        align-items: center;
+        /* 
+        justify-items: center;
+        align-items: center; */
+        
+        
+         
+    }
+
+    .see-more{
+        margin-top: 30px;
+        padding-right: 35px;
+    }
+
+    .join{
+        flex-direction: column-reverse;
+        padding: 0px 30px;
+        gap: 30px;
+        text-align: center;
+    }
+
+    .join img{
+        width: 100%;
+    }
+
+    
+    
+    
+    
+}
+
+.vanish{
+    display: none;
+}
